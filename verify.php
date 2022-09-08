@@ -10,14 +10,22 @@
     <h1 align="center"> Webboard Sopit </h1>
     <hr>
     <div align ="center">
-        เข้าสู่ระบบด้วย <br>
-        Login = <?php echo $_POST["Login"];?><br>
-        Password = <?php echo $_POST["Password"];?>
-
+        <br>
         <?php 
-        echo "Login=".$_POST["Login"]."<br>";
-        echo "Password=".$_POST["Password"]."<br>";
+        if($_POST["Login"]=="admin" && $_POST["Password"]=="ad1234"){
+            echo "ยินดีต้อนรับคุณ ADMIN";
+        }elseif ($_POST["Login"]=="member" && $_POST["Password"]=="mem1234"){
+            echo "ยินดีต้อนรับคุณ MEMBER";
+        }else{
+            echo "ชื่อบัญชีหรือรหัสผ่านไม่ถูกต้อง";
+        }
+    
+        //echo "Login=".$_POST["Login"]."<br>";
+        //echo "Password=".$_POST["Password"]."<br>";
+        
         ?>
+        <br>
+        <a href="index.html">กลับไปหน้าหลัก</a>
     </div>
 </body>
 </html>

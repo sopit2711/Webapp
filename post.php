@@ -10,9 +10,15 @@
     <h1 align="center"> Webboard Sopit </h1>
     <hr>
     <div align ="center">
-        <p>  ต้องการดูกระทู้หมายเลข <?php echo $_GET["id"]?></p></br>
-      
-
+    <p>  ต้องการดูกระทู้หมายเลข <?php echo $_GET["id"]?></p>
+    <?php
+    if($_GET['id']%2==0){
+        echo "เป็นกระทู้หมายเลขคู่";
+    }else{
+        echo "เป็นกระทู้หมายเลขคี่";
+    }
+    ?>
+    </br>
         <table style="border: 2px solid black; width:40%" align="center">
         <tr><td  colspan="2" style="background-color:#6CD2FE;"align="center">แสดงความคิดเห็น</td></tr>
         <tr><td><textarea name="" id="" cols="100" rows="10"></textarea></textarea></td></tr>
