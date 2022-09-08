@@ -25,7 +25,7 @@
         
         ?>
         <br>
-        <a href="index.html">กลับไปหน้าหลัก</a>
+        <a href="index.php">กลับไปหน้าหลัก</a>
     </div>
 </body>
 </html>
